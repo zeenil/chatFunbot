@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FunDine Chatbot</title>
+    <!-- Your existing CSS styles -->
+    <style>
+        /* Your existing CSS styles */
+        /* Add any additional styles for the chatbot widget here */
+        body {
+            background-color: #020220; /* Changed background color to dark blue */
+            color: #fff; /* Changed text color to white */
+            text-align: center; /* Center align text */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensures page takes up at least the full height of the viewport */
+        }
+
+        .chat-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 300px;
+            background-color: #020133; /* Changed to dark blue */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            z-index: 9999;
+            color: #fff; /* Changed text color to white */
+            text-align: left; /* Reset text alignment */
+        }
+
+        .chat-header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        .chat-body {
+            background-color: #020218;
+            padding: 10px;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+
+        .chat-input {
+            width: calc(100% - 20px);
+            margin: 10px;
+            padding: 5px;
+            color: #000; /* Changed text color to black */
+        }
+
+        .chat-submit {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        header, main {
+            padding: 20px;
+            flex: 1; /* Allows main content to take up remaining space */
+        }
+
+        footer {
+            background-color: #ffffff;
+            color: #000000;
+            text-align: center;
+            margin-top: auto; /* Pushes footer to bottom */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>FunDine Chatbot</h1>
+    </header>
+   
+    <main>
+        <h2>Welcome to Your Chatbot!</h2>
+        <p>Talk with your Favourite Character.</p>
+    </main>
+    
+    <footer>
+        &copy; 2024 Your Website. All rights reserved.
+    </footer>
+
+    <!-- Chatbot Widget -->
+    <div id="bp-widget"></div>
+
+    <!-- Botpress Integration Scripts -->
+    <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+    <script src="https://mediafiles.botpress.cloud/6c29f392-17c5-4279-8200-a3d76da642fb/webchat/config.js" defer></script>
+</body>
+</html>
